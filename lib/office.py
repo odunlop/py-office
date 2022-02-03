@@ -4,7 +4,10 @@ class MeetingRoom:
         self.avaliablity = True
     
     def start(self):
-        self.avaliablity = False
+        if self.avaliablity == False:
+            return "This room is already in use!"
+        else:
+            self.avaliablity = False
     
     def end(self):
         self.avaliablity = True

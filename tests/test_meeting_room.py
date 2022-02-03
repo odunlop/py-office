@@ -20,3 +20,11 @@ class TestMeetingRoom(unittest.TestCase):
         room.start()
         room.end()
         self.assertEqual(room.avaliablity, True)
+    
+    def test_cannot_start_meeting_in_occupied_room(self):
+        room = MeetingRoom("5E")
+        room.start()
+        self.assertEqual(
+            room.start(),
+            "This room is already in use!"
+        )
