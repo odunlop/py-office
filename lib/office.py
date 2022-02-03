@@ -1,3 +1,5 @@
+from dataclasses import dataclass
+
 class MeetingRoom:
     def __init__(self, name):
         self.name = name
@@ -24,3 +26,7 @@ class Office:
     
     def free_rooms(self):
         return [room.name for room in self._rooms if room.avaliability == True]
+
+@dataclass
+class Team:
+    name: str
