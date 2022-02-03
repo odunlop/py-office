@@ -1,5 +1,5 @@
 import unittest
-from lib.meeting_room import MeetingRoom
+from lib.office import MeetingRoom
 
 class TestMeetingRoom(unittest.TestCase):
     def test_meeting_room_name(self):
