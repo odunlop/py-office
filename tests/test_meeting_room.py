@@ -9,20 +9,20 @@ class TestMeetingRoom(unittest.TestCase):
     
     def test_meeting_room_avaliable_by_default(self):
         room = MeetingRoom("2B")
-        self.assertEqual(room.avaliablity, True)
+        self.assertEqual(room.avaliable, True)
     
     def test_starting_meeting_makes_room_unavaliable(self):
         room = MeetingRoom("3C")
         mock_team = Mock()
         room.start(mock_team)
-        self.assertEqual(room.avaliablity, False)
+        self.assertEqual(room.avaliable, False)
     
     def test_ending_meeting_makes_room_avaliable(self):
         room = MeetingRoom("4D")
         mock_team = Mock()
         room.start(mock_team)
         room.end()
-        self.assertEqual(room.avaliablity, True)
+        self.assertEqual(room.avaliable, True)
     
     def test_cannot_start_meeting_in_occupied_room(self):
         room = MeetingRoom("5E")

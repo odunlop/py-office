@@ -11,23 +11,31 @@ class Office:
         return [room.name for room in self._rooms]
     
     def free_rooms(self):
-        return [room.name for room in self._rooms if room.avaliability == True]
+        return [room.name for room in self._rooms if room.avaliable == True]
+    
+    def occupied_rooms(self):
+        return [
+            f"{room.name}: {room.team}"
+            for room
+            in self._rooms
+            if room.avaliable == False
+        ]
 
 class MeetingRoom:
     def __init__(self, name):
         self.name = name
-        self.avaliablity = True
+        self.avaliable = True
         self.team = None
     
     def start(self, team):
-        if self.avaliablity == False:
+        if self.avaliable == False:
             return "This room is already in use!"
         else:
-            self.avaliablity = False
+            self.avaliable = False
             self.team = team
     
     def end(self):
-        self.avaliablity = True
+        self.avaliable = True
 
 @dataclass
 class Team:
