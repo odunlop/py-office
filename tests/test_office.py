@@ -5,8 +5,23 @@ from lib.office import Office
 class TestOffice(unittest.TestCase):
     def test_add_meeting_room(self):
         office = Office()
-        mock_room = Mock(name = "1B")
+        mock_room = MockMeetingRoom("1B", True)
         office.add(mock_room)
-        self.assertEqual(office.list_rooms(), [mock_room.name])
-        
+        self.assertEqual(office.list_rooms(), ["1B"])
+    
+    # def test_list_free_rooms(self):
+    #     office = Office()
+    #     mock_room = Mock(name = "1B", avaliablity = True )
+    #     mock_room2 = Mock(name = "1B", avaliablity = False )
+    #     office.add(mock_room)
+    #     office.add(mock_room2)
+    #     self.assertEqual(
+    #         office.free_rooms(),
+    #         ["1B"]
+    #     )
+
+class MockMeetingRoom:
+    def __init__(self, name, avaliability):
+        self.name = name
+        self.avaliability = avaliability
 
