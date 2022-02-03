@@ -1,4 +1,5 @@
 import unittest
+from unittest.mock import Mock
 from lib.office import MeetingRoom
 
 class TestMeetingRoom(unittest.TestCase):
@@ -12,19 +13,28 @@ class TestMeetingRoom(unittest.TestCase):
     
     def test_starting_meeting_makes_room_unavaliable(self):
         room = MeetingRoom("3C")
-        room.start()
+        mock_team = Mock()
+        room.start(mock_team)
         self.assertEqual(room.avaliablity, False)
     
     def test_ending_meeting_makes_room_avaliable(self):
         room = MeetingRoom("4D")
-        room.start()
+        mock_team = Mock()
+        room.start(mock_team)
         room.end()
         self.assertEqual(room.avaliablity, True)
     
     def test_cannot_start_meeting_in_occupied_room(self):
         room = MeetingRoom("5E")
-        room.start()
+        mock_team = Mock()
+        room.start(mock_team)
         self.assertEqual(
-            room.start(),
+            room.start(mock_team),
             "This room is already in use!"
         )
+
+    def test_starting_meeting_assigns_team(self):
+        room = MeetingRoom("6F")
+        mock_team = Mock()
+        room.start(mock_team)
+        self.assertEqual(room.team, mock_team)

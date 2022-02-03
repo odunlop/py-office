@@ -15,10 +15,13 @@ As part of my first week learning Python, this repo was created to attempt an ol
 - Start meeting, making the room unavaliable :white_check_mark:
     - Blocks you try to start a meeting in an occupied room :white_check_mark:
 - End meeting, making the room free :white_check_mark:
-- Can be assigned to a team when a meeting starts :construction:
+- Will be assigned to a team when a meeting starts :white_check_mark:
 
 ### Office class
 - Add meeting rooms to an office :white_check_mark:
 - List all the meeting rooms in an office :white_check_mark:
 - List of all avaliable offices :white_check_mark:
 - Lists occupied rooms with which teams are using them :construction:
+
+### Team class (*Data Class*)
+- Has a name which can be accessed :white_check_mark:
