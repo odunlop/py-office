@@ -8,13 +8,14 @@ As part of my first week learning Python, this repo was created to attempt an ol
 * Designed so employees can check if a meeting room is busy or occupied
 
 ## Functionality
-- MeetingRoom class
-    - Has a name which can be accessed :construction:
-    - Check avaliability (True or False)
-    - Start meeting, making the room unavaliable
-        - Receive an error if you try to start a meeting in an occupied room
-    - End meeting, making the room free
-- Office class
-    - Add meeting rooms to an office :construction:
-    - List all the meeting rooms in an office :construction:
-    - List of all avaliable offices
+### MeetingRoom class
+- Has a name which can be accessed :white_check_mark:
+- Check avaliability (True or False)
+- Start meeting, making the room unavaliable
+    - Receive an error if you try to start a meeting in an occupied room
+- End meeting, making the room free
+
+### Office class
+- Add meeting rooms to an office :construction:
+- List all the meeting rooms in an office :construction:
+- List of all avaliable offices
