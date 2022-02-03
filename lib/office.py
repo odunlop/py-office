@@ -1,6 +1,10 @@
 class MeetingRoom:
     def __init__(self, name):
         self.name = name
+        self.avaliablity = True
+    
+    def start(self):
+        self.avaliablity = False
 
 class Office:
     def __init__(self):

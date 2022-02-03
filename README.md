@@ -10,12 +10,12 @@ As part of my first week learning Python, this repo was created to attempt an ol
 ## Functionality
 ### MeetingRoom class
 - Has a name which can be accessed :white_check_mark:
-- Check avaliability (True or False) :construction:
-- Start meeting, making the room unavaliable
+- Check avaliability (True or False) :white_check_mark:
+- Start meeting, making the room unavaliable :white_check_mark:
     - Receive an error if you try to start a meeting in an occupied room
 - End meeting, making the room free
 
 ### Office class
 - Add meeting rooms to an office :white_check_mark:
 - List all the meeting rooms in an office :white_check_mark:
-- List of all avaliable offices
+- List of all avaliable offices :construction:
