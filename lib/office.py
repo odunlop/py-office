@@ -14,7 +14,7 @@ class Office:
         self._rooms.append(room)
 
     def list_rooms(self):
-        return self.print_rooms(self._rooms)
-    
-    def print_rooms(self, rooms):
         return [room.name for room in self._rooms]
+    
+    def free_rooms(self):
+        return [room.name for room in self._rooms if room.avaliability == True]
