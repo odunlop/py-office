@@ -5,6 +5,9 @@ class MeetingRoom:
     
     def start(self):
         self.avaliablity = False
+    
+    def end(self):
+        self.avaliablity = True
 
 class Office:
     def __init__(self):

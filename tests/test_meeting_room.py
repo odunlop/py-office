@@ -14,3 +14,9 @@ class TestMeetingRoom(unittest.TestCase):
         room = MeetingRoom("3C")
         room.start()
         self.assertEqual(room.avaliablity, False)
+    
+    def test_ending_meeting_makes_room_avaliable(self):
+        room = MeetingRoom("4D")
+        room.start()
+        room.end()
+        self.assertEqual(room.avaliablity, True)
