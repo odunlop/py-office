@@ -11,7 +11,7 @@ As part of my first week learning Python, this repo was created to attempt an ol
 ## Functionality
 ### MeetingRoom class
 - Has a name which can be accessed :white_check_mark:
-- Check avaliability (True or False) :white_check_mark:
+- Check avaliability (*True* or *False*) :white_check_mark:
 - Start meeting, making the room unavaliable :white_check_mark:
     - Blocks you try to start a meeting in an occupied room :white_check_mark:
 - End meeting, making the room free :white_check_mark:
