@@ -8,6 +8,13 @@ As part of my first week learning Python, this repo was created to attempt an ol
 * Designed so employees can check if a meeting room is busy or occupied
 * Test-driven with dependency injection in mind
 
+### Database Setup
+*It is probably not necessary to have a database for this project but I thought it would be a good one to try setting up a database with Python for the first time*
+
+Connect to psql and create the office_teams database:
+* Enter the command `CREATE DATABASE office_teams;`
+* To set up appropriate tables, connect to the databse in psql and run the SQL scripts in the 'db/migrations' folder.
+
 ## Functionality
 ### MeetingRoom class
 - Has a name which can be accessed :white_check_mark:
