@@ -61,3 +61,13 @@ class MeetingRoom:
 @dataclass
 class Team:
     name: str
+
+    def __post_init__(self):
+        insert_query = (
+            f"INSERT INTO teams (name) VALUES ('{self.name}');"
+        )
+        connection.autocommit = True
+        cursor = connection.cursor()
+        cursor.execute(insert_query)
+    
+
