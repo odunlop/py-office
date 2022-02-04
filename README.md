@@ -8,6 +8,7 @@ As part of my first week learning Python, this repo was created to attempt an ol
     - psycopg2 (pip must be fully up to date to ensure it works properly)
 * Designed so employees can check if a meeting room is busy or occupied
 * Test-driven with dependency injection in mind
+* Database is truncated after during tests :construction:
 
 ### Database Setup
 *It is probably not necessary to have a database for this project but I thought it would be a good one to try setting up a database with Python for the first time*
@@ -33,4 +34,4 @@ Connect to psql and create the office_teams database:
 
 ### Team class (*Data Class*)
 - Has a name which can be accessed :white_check_mark:
-- Store new teams in a database? :construction:
+- Store new teams in a database? :white_check_mark:
