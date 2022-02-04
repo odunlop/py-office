@@ -1,5 +1,4 @@
 import unittest
-from unittest.mock import Mock
 from lib.office import Office
 
 class TestOffice(unittest.TestCase):

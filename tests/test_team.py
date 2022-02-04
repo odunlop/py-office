@@ -13,7 +13,8 @@ class TestTeam(unittest.TestCase):
         self.assertEqual(team.name, "Bethesda")
     
     def test_team_entered_into_db_upon_creation(self):
-        database.execute_read_query(connection, "TRUNCATE teams;")
+        truncate_table = "TRUNCATE teams;"
+        database.execute_query(connection, truncate_table)
 
         team = Team("SpaceX")
         result = database.execute_read_query(connection, "SELECT * FROM teams WHERE name = 'SpaceX'")
