@@ -25,3 +25,5 @@ As part of my first week learning Python, this repo was created to attempt an ol
 
 ### Team class (*Data Class*)
 - Has a name which can be accessed :white_check_mark:
+- Store new teams in a database? :construction:
+    - See if this is correct to do with a dataclass...
